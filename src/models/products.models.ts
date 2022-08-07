@@ -1,6 +1,6 @@
 import { ResultSetHeader } from 'mysql2';
 import { TpostProducts } from '../@types/Tproducts';
-import connection from '../helpers/connection';
+import connection from './connection';
 
 async function postProducts(obj: TpostProducts) {
   const { name, amount } = obj;
