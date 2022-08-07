@@ -1,3 +1,10 @@
 import { postProducts, getProducts } from './products.controller';
+import createNewUser from './users.controller';
 
-export default { postProducts, getProducts };
+const controllers = {
+  postProducts,
+  getProducts,
+  createNewUser,
+};
+
+export default controllers;
