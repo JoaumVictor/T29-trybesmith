@@ -10,4 +10,4 @@ const httpStatusCodes = {
   UNPROCESSABLE_ENTITY: 422,
 };
 
-module.exports = httpStatusCodes;
+export default httpStatusCodes;
