@@ -5,9 +5,7 @@ const getAllOrders = async () => {
 
   const result = orders.map((order) => {
     const productsIds = products.filter((product) => product.orderId === order.id);
-
     const formattedIds = productsIds.map((product) => product.id);
-
     return { ...order, productsIds: formattedIds };
   });
 
